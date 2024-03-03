@@ -1,0 +1,47 @@
+/* Larger screen styles */
+
+@media (max-width: 500px) {
+  
+  nav {
+    flex-direction: row;
+  }
+
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    display: block;
+  }
+
+  .grid section {
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 30px rgb(83,75,75);
+  }
+
+  nav a {
+    display: block;
+  }
+
+  .foot {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    flex: 1;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+
+
+
+}

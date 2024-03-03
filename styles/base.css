@@ -1,0 +1,140 @@
+/* Course home page */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  /* background-color: #A7D8B5; */
+  background-color: #424C42;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.pic, .name {
+  width: 55px;
+  height: 75px;
+  vertical-align: middle;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.name {
+  display: inline;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav {
+  background-color: #0A0A0A;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 3rem;
+  font-weight: 700;
+}
+
+nav a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav .active {
+  background-color: #50574a;
+}
+
+main {
+  padding: 20px;
+  flex: 4;
+}
+
+footer {
+  background-color: #424C42;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.grid section {
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgb(83,75,75);
+}
+
+.card {
+  padding: 10px;
+}
+
+.card ul li {
+  font-weight: bold;
+}
+
+.heading2 {
+  background-color: #424C42;
+  padding: 10px;
+  color: white;
+}
+
+.Placeholders {
+  display: flex;
+  flex-direction: column;
+}
+
+.Placeholders dt {
+  font-weight: bold;
+}
+
+.Placeholders dt, .Placeholders dd {
+  margin: 5px 0;
+  padding: 0 10px;
+}
+
+.country {
+  display: inline;
+}
+
+.flagpic {
+  width: 20px;
+  height: auto;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.highlight {
+  color: yellow;
+}

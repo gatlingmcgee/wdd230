@@ -1,11 +1,20 @@
 @media (max-width: 500px) {
   
-  nav {
-    flex-direction: row;
+  main {
+    max-width: 960vw;
+    margin: 0 auto;
+    
   }
 
-  main {
-    max-width: 960px;
-    margin: 0 auto;
+  .dwireframe {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .mwireframe {
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
 }

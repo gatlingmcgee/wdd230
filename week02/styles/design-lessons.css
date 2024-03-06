@@ -1,12 +1,5 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
 body {
 	font-family: Roboto, helvetica, sans-serif;
-	margin: 1rem;
 }
 
 header,
@@ -16,26 +9,13 @@ footer {
 	margin: 0 auto;
 }
 
-main {
-	display: grid;
-	grid-template-columns: 1fr 200px;
-	grid-gap: 1.5rem;
-}
-
-section {
-	padding: 1rem;
-}
-
-div .banner {
+marquee {
 	padding: 1rem;
 	background-color: #eee;
-	text-align: center;
-	border: 10px;
 }
 
 h1 {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	margin: 1rem 0;
 }
 
 main {
@@ -44,7 +24,7 @@ main {
 
 h2 {
 	color: navy;
-	grid-column: 1/3;
+	text-align: center;
 }
 
 article p {
@@ -52,10 +32,8 @@ article p {
 }
 
 .callout {
-	color: #dfd5d5;
-	background-color: #471e40;
-	grid-column: 1/3;
-	padding: 20px;
+	color: #777;
+	background-color: #702963;
 }
 
 footer {
@@ -63,5 +41,4 @@ footer {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	font-size: smaller;
 	text-align: right;
-	padding: .5rem 0;
 }

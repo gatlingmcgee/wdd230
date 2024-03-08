@@ -143,3 +143,7 @@ footer {
 	cursor: pointer;
 	font-size: 2rem;
 }
+
+#menu {
+  display: none; /* hide hamburger button */
+}

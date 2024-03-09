@@ -58,15 +58,15 @@
     font-size: 1rem;
   }
 
-  #menu::before {
+  #hamburger-menu::before {
     content: "☰";
   }
 
-  #menu.open::before {
+  #hamburger-menu.open::before {
     content: "❌";
   }
   
-  #menu {
+  #hamburger-menu {
     font-size: 1.5rem;
     border: 0;
     color: #000;

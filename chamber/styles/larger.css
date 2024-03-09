@@ -1,0 +1,50 @@
+@media (max-width: 500px) {
+  
+  main {
+    max-width: 960vw;
+    margin: 0 auto;
+    
+  }
+
+  .hero-image {
+    width: 99%;
+    height: auto;
+    padding: 10px;
+  }
+
+
+  .navigation {
+    background: none;
+  }
+
+  .navigation a {
+    display: none;
+  }
+
+  .navigation a:hover {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  #hamburger-menu::before {
+    content: "☰";
+  }
+
+  #hamburger-menu.open::before {
+    content: "❌";
+  }
+  
+  #hamburger-menu {
+    font-size: 1.5rem;
+    border: 0;
+    color: #000;
+    position: absolute;
+	  left: 10px;
+	  top: 10px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .open a {
+    display: block;
+  }
+}

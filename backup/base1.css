@@ -8,6 +8,12 @@ body {
   min-height: 100vh;
 }
 
+h5 {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 header {
   background-color: #424C42;
   color: #fff;
@@ -144,6 +150,7 @@ footer {
 	font-size: 2rem;
 }
 
-#menu {
+#hamburger-menu {
   display: none; /* hide hamburger button */
 }
+

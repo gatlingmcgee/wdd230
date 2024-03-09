@@ -46,10 +46,16 @@ modeButton.addEventListener("click", () => {
 
 /* ---------------------------Hamburger----------------------------- */
 
-const button = document.querySelector('#menu');
+const button = document.querySelector('#hamburger-menu');
 const navigation = document.querySelector('.navigation');
 
 button.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	button.classList.toggle('open');
 });
+
+/* ---------------------------Back Button----------------------------- */
+
+function goBack() {
+	window.history.back();
+}

@@ -12,10 +12,9 @@ body {
 header {
   background-color: #3e5b7e;
   color: #fff;
-  padding: 10px;
+  padding: 35px;
   width: 100%;
   text-align: center;
-  /* position: relative; */
 }
 
 h1 {
@@ -44,7 +43,7 @@ h1 {
 
 .hero-image {
   width: 99%;
-  max-height: 250px;
+  height: auto;
   padding: 10px;
 }
 
@@ -52,6 +51,7 @@ main {
   padding: 20px;
   flex: 4;
 }
+
 
 footer {
   background-color: #334c6b;
@@ -84,5 +84,33 @@ footer {
 
 .cta-button:hover {
   background-color: #a39f9f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.spotlightgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+
+.grid section {
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgb(83,75,75);
+}
+
+.spotlightgrid section {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 30px rgb(83,75,75);
+  padding: 10px;
+  border: 1px solid black;
 }
 

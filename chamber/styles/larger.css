@@ -9,11 +9,12 @@
   h1 {
     font-size: 1.4rem;
     padding: 20px;
+    vertical-align: middle;
   }
 
   .hero-image {
-    width: auto;
-    max-height: 220px;
+    width: 100%;
+    height: auto;
     padding: 10px;
   }
 
@@ -52,6 +53,30 @@
   .open a {
     display: block;
     background-color: #1d3a63;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    display: block;
+  }
+
+  .grid section {
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 30px rgb(83,75,75);
+  }
+
+  .spotlightgrid {
+    display: block;
+    padding: 50px;
+  }
+
+  .spotlightgrid section {
+    border: 1px solid black;
+    margin-bottom: 30px;
   }
 
 }

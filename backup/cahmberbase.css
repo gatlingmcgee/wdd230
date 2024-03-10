@@ -15,7 +15,6 @@ header {
   padding: 10px;
   width: 100%;
   text-align: center;
-  /* position: relative; */
 }
 
 h1 {
@@ -23,12 +22,12 @@ h1 {
 }
 
 .navigation {
-  background-color: #1d3a63;
+  background-color: #c6d4e6;
   padding: 20px;
 }
 
 .navigation a {
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px 3rem;
   font-weight: 700;
@@ -39,12 +38,12 @@ h1 {
 }
 
 .navigation .active {
-  background-color: #3d5776;
+  background-color: #587fad;
 }
 
 .hero-image {
   width: 99%;
-  max-height: 250px;
+  height: auto;
   padding: 10px;
 }
 
@@ -54,8 +53,8 @@ main {
 }
 
 footer {
-  background-color: #334c6b;
-  color: #ffffff;
+  background-color: #3e5b7e;
+  color: #fff;
   text-align: center;
   padding: 10px;
   width: 100%;
@@ -68,21 +67,5 @@ footer {
 
 #hamburger-menu {
   display: none; /* hide hamburger button */
-}
-
-.cta-button {
-  background-color: #112c52;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.cta-button:hover {
-  background-color: #a39f9f;
 }
 

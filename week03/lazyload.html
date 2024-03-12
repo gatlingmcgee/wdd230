@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sean Sonderegger - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="Sean Sonderegger lazyload page - WDD 230 - Web Frontend Development">
+  <meta name="author" content="Sean Sonderegger">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+  <header>
+    <h1>lazyload Images</h1>
+  </header>
+  <main>
+    <picture><img src="images/landscape.webp" alt="placeholder Kitten Image" loading="lazy" width="400" height="600"></picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium dolorum quaerat vero delectus aperiam ipsum earum repellendus, odio numquam nisi dolor ipsam repellat iure et magni tempore, veniam officia libero ipsa id non! Impedit deleniti eius temporibus voluptatem qui sunt, adipisci iusto est ipsum dignissimos debitis sed cumque cum incidunt perferendis iste voluptas sint quas mollitia vero, commodi recusandae maiores. Aliquam in reprehenderit ullam deleniti hic numquam, distinctio voluptatum, asperiores tempore aspernatur ea, fugit iusto suscipit. Deleniti accusantium commodi, nobis est magnam quia aliquid iste ea sequi repudiandae repellendus quisquam hic eius ut, corrupti eveniet maiores sapiente quasi odio.</p>
+    <picture><img src="images/download.jpeg" alt="placeholder Kitten Image" loading="lazy" width="400" height="600"></picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium dolorum quaerat vero delectus aperiam ipsum earum repellendus, odio numquam nisi dolor ipsam repellat iure et magni tempore, veniam officia libero ipsa id non! Impedit deleniti eius temporibus voluptatem qui sunt, adipisci iusto est ipsum dignissimos debitis sed cumque cum incidunt perferendis iste voluptas sint quas mollitia vero, commodi recusandae maiores. Aliquam in reprehenderit ullam deleniti hic numquam, distinctio voluptatum, asperiores tempore aspernatur ea, fugit iusto suscipit. Deleniti accusantium commodi, nobis est magnam quia aliquid iste ea sequi repudiandae repellendus quisquam hic eius ut, corrupti eveniet maiores sapiente quasi odio.</p>
+    <picture><img src="images/th (1).jpeg" alt="placeholder Kitten Image" loading="lazy" width="400" height="600"></picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium dolorum quaerat vero delectus aperiam ipsum earum repellendus, odio numquam nisi dolor ipsam repellat iure et magni tempore, veniam officia libero ipsa id non! Impedit deleniti eius temporibus voluptatem qui sunt, adipisci iusto est ipsum dignissimos debitis sed cumque cum incidunt perferendis iste voluptas sint quas mollitia vero, commodi recusandae maiores. Aliquam in reprehenderit ullam deleniti hic numquam, distinctio voluptatum, asperiores tempore aspernatur ea, fugit iusto suscipit. Deleniti accusantium commodi, nobis est magnam quia aliquid iste ea sequi repudiandae repellendus quisquam hic eius ut, corrupti eveniet maiores sapiente quasi odio.</p>
+    <picture><img src="images/th (2).jpeg" alt="placeholder Kitten Image" loading="lazy" width="400" height="600"></picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium dolorum quaerat vero delectus aperiam ipsum earum repellendus, odio numquam nisi dolor ipsam repellat iure et magni tempore, veniam officia libero ipsa id non! Impedit deleniti eius temporibus voluptatem qui sunt, adipisci iusto est ipsum dignissimos debitis sed cumque cum incidunt perferendis iste voluptas sint quas mollitia vero, commodi recusandae maiores. Aliquam in reprehenderit ullam deleniti hic numquam, distinctio voluptatum, asperiores tempore aspernatur ea, fugit iusto suscipit. Deleniti accusantium commodi, nobis est magnam quia aliquid iste ea sequi repudiandae repellendus quisquam hic eius ut, corrupti eveniet maiores sapiente quasi odio.</p>
+    <picture><img src="images/th (3).jpeg" alt="placeholder Kitten Image" loading="lazy" width="400" height="600"></picture>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus laudantium dolorum quaerat vero delectus aperiam ipsum earum repellendus, odio numquam nisi dolor ipsam repellat iure et magni tempore, veniam officia libero ipsa id non! Impedit deleniti eius temporibus voluptatem qui sunt, adipisci iusto est ipsum dignissimos debitis sed cumque cum incidunt perferendis iste voluptas sint quas mollitia vero, commodi recusandae maiores. Aliquam in reprehenderit ullam deleniti hic numquam, distinctio voluptatum, asperiores tempore aspernatur ea, fugit iusto suscipit. Deleniti accusantium commodi, nobis est magnam quia aliquid iste ea sequi repudiandae repellendus quisquam hic eius ut, corrupti eveniet maiores sapiente quasi odio.</p>
+    <picture><img src="images/th.jpeg" alt="placeholder Kitten Image" loading="lazy" width="400" height="600"></picture>
+  </main>
+
+  <div>
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Sean Sonderegger
+      <p id="lastModified" class="highlight"></p>
+    </footer>
+  </div>
+
+  <div>
+    <button onclick="goBack()">Go Back</button>
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+  </div>
+
+  <script src="scripts/lazyload.js"></script>
+
+</body>
+</html>

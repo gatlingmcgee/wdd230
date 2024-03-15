@@ -135,6 +135,7 @@ footer {
   height: auto;
   margin-left: 5px;
   vertical-align: middle;
+  animation: fade 2s;
 }
 
 .highlight {
@@ -154,3 +155,50 @@ footer {
   display: none; /* hide hamburger button */
 }
 
+.heroimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.positioning {
+  display: inline-block;
+
+  margin: 20px;
+
+  box-shadow: 0 0 30px rgb(83,75,75);
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+	position: relative;
+  top: 50px;
+  left: 5%;
+}
+
+.positioning span {
+  position: absolute;
+  background-color: rgba(255,255,255,0.2);
+  padding: 5px;
+  width: max-content;
+  box-shadow: 0 0 30px rgb(83,75,75);
+  border-radius: 6px;
+}
+
+.map {
+  margin: auto;
+  width: 90%;
+  padding: 60px;
+  animation: fade 2s;
+}

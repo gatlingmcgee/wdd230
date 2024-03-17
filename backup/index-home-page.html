@@ -24,7 +24,7 @@
     <div id="mode">
       🌙
     </div>
-    <img class="pic" src="images/ME-min.jpg" alt="Sean Sonderegger Profile Pic">
+    <img class="pic" src="images/ME-min.webp" alt="Sean Sonderegger Profile Pic">
     <h1 class = "name">Sean Sonderegger</h1>
     <a id="hamburger-menu" href="#"></a>
     <nav class = "navigation">
@@ -35,10 +35,15 @@
     </nav>
   </header>
   <main>
+    <div class="positioning">
+      <span>Oklahoma City Temple</span>
+    </div>
+    <picture>
+      <source media="(max-width: 400px)" srcset="images/oklahomacitytemple_small-min.webp">
+      <source media="(max-width: 1000px)" srcset="images/oklahomacitytemple_med-min.webp">
+      <img class="heroimg" src="images/oklahomacitytemple_large-min.webp" alt="TempleImage" width="500" height="250">
+    </picture>
     <h5>WDD 230: Web Frontend Development</h5>
-    <!-- <div class="disc">
-      WDD 230: Web Frontend Development
-    </div> -->
     <hr>
     <div class="grid">
       <section id="testing" class="card">
@@ -46,7 +51,7 @@
         <ul>
           <li>Week01: <a href="http://127.0.0.1:5500/week01/holygrail.html">Holy Grail</a> | <a href="http://127.0.0.1:5500/week01/media-query.html">Media Query</a></li>
           <li>Week02: <a href="http://127.0.0.1:5500/week02/subfolder/bom.html">BOM List</a> | <a href="http://127.0.0.1:5500/week02/design.html">Design Principles</a></li>
-          <li>Week03: <a href="#">Learning Activity 3: </a></li>
+          <li>Week03: <a href="http://127.0.0.1:5500/week03/images/landscape.webp">Landscape Image</a> | <a href="http://127.0.0.1:5500/week03/lazyload.html">Lazyload</a> | <a href="http://127.0.0.1:5500/week03/responsive-images.html">Responsive Images</a> | <a href="http://127.0.0.1:5500/week03/subfolder/bom.html">BOM Array</a></li>
           <li>Week04: <a href="#">Learning Activity 4: </a></li>
           <li>Week05: <a href="#">Learning Activity 5: </a></li>
           <li>Week06: <a href="#">Learning Activity 6: </a></li>
@@ -60,15 +65,19 @@
             <dt>Weather:</dt>
             <dd id="weather-placeholder"></dd>
             <dt>Number of Page Visits:</dt>
-            <dd id="visits-placeholder"></dd>
+            <!-- <dd id="visits-placeholder"></dd> -->
+            <dd>
+              <p><span class="visits"></span></p>
+            </dd>
           </dl>
       </section>
     </div>
   </main>
   <div>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d173469.42555764745!2d-95.95965488427693!3d36.11059587424551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x87b6619f0842679b%3A0x340ba749366e9c61!2sPeep&#39;s%20Convenience%20Store%2C%20East%2071st%20Street%20South%2C%20Broken%20Arrow%2C%20OK!3m2!1d36.0610408!2d-95.6905251!4m5!1s0x87b6edd0d5e789ad%3A0xc560003ab2a3d697!2sGathering%20Place%2C%20South%20John%20Williams%20Way%2C%20Tulsa%2C%20OK!3m2!1d36.1251603!2d-95.9840207!5e0!3m2!1sen!2sus!4v1710366890263!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
       <p>&copy; <span id="currentYear"></span> Sean Sonderegger <span class="country"> United States
-        <img class="flagpic" src="images/usaflag-min.jpeg" alt="USA Flag Pic"></span>
+        <img class="flagpic" src="images/usaflag-min.webp" alt="USA Flag Pic"></span>
       </p>
       <p id="lastModified" class="highlight"></p>
     </footer>

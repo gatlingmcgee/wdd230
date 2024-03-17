@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   
   .navigation {
     display: flex;
@@ -39,6 +39,12 @@
     margin: 5px;
     border-radius: 6px;
     box-shadow: 0 0 30px rgb(83,75,75);
+  }
+
+  h5 {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
   }
 
   nav {
@@ -82,13 +88,27 @@
   }
 
   .name {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .pic{
     width: 45px;
     height: auto;
-    padding: 5px;
+    padding: 4px;
   }
 
-}
+/*  .positioning {
+    position: absolute;
+    left: 80px;
+    top: 160px;
+    font-size: 15px
+  }*/
+
+  .map {
+    margin: auto;
+    width: 90%;
+    padding: 30px;
+    animation: fade 2s;
+  }
+  
+} 

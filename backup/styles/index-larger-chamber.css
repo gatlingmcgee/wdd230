@@ -12,7 +12,7 @@
     vertical-align: middle;
   }
 
-  .hero-image, .photo-container-img {
+  .hero-image {
     width: 100%;
     height: auto;
     padding: 10px;
@@ -69,7 +69,7 @@
     box-shadow: 0 0 30px rgb(83,75,75);
   }
 
-  .spotlightgrid, .side-bar {
+  .spotlightgrid {
     display: block;
     padding: 50px;
   }
@@ -80,9 +80,4 @@
   }
 
 }
-
-
-
-
-
 

@@ -54,25 +54,19 @@ button.addEventListener('click', () => {
 	button.classList.toggle('open');
 });
 
-// Function to adjust the position of the overlay
 function adjustOverlayPosition() {
     const overlay = document.querySelector('.overlay');
     const isOpen = document.querySelector('#hamburger-menu').classList.contains('open');
 
     if (isOpen) {
-        // Move the overlay when the hamburger menu is open
         overlay.style.left = '0';
     } else {
-        // Reset the position when the hamburger menu is closed
-        overlay.style.left = '-100%'; // Move the overlay off-screen
+        overlay.style.left = '-100%';
     }
 }
 
-// Event listener for the hamburger menu
 document.getElementById('hamburger-menu').addEventListener('click', function() {
-    // Toggle the 'open' class on the hamburger menu button
     this.classList.toggle('open');
-    // Call the adjustOverlayPosition function to adjust the position of the overlay
     adjustOverlayPosition();
 });
 

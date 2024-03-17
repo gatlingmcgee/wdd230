@@ -117,9 +117,10 @@ footer {
 /* ---------------------------Discovery----------------------------- */
 
 .side-bar {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+  gap: 20px;
+  padding: 100px;
 }
 
 .left-column {

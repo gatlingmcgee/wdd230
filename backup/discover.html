@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Broken Arrow Chamber of Commerce Site</title>
-  <meta name="description" content=" Broken Arrow Chamber of Commerce - WDD 230 - Web Frontend Development - This name represents the city in which the chamber operates in Broken Arrow. OK.">
+  <title>Broken Arrow Chamber of Commerce and Discover Site</title>
+  <meta name="description" content=" Broken Arrow Chamber of Commerce - WDD 230 - Web Frontend Development - This page displays the events and images for Broken Arrow Oklahoma">
   <meta name="author" content="Sean Sonderegger">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,9 +33,17 @@
   <main class="side-bar">
     <div class="grid-side-bar">
       <div class="left-column">
-        <article class="article" id="visit-message">
-          <!-- <h2 id="visits-message">Welcome! Let us know if you have any questions.</h2> -->
-        </article>
+
+        <section id="visit-message">
+          <h2 class = "message">Welcome! Let us know if you have any questions.</h2>
+            <dl>
+              <dt>Number of Page Visits:</dt>
+              <dd>
+                <p><span class="visits"></span></p>
+              </dd>
+            </dl>
+        </section>
+
         <aside>
           <h2>Statistical Data</h2>
             <p><span>Population: </span>117,911</p>
@@ -67,54 +75,55 @@
         </aside>
       </div>
     </div>
+    
     <div class="right-column-photo-gallery">
       <div class="photo-title">
         <h2>Photo Gallery</h2>
       </div>
-      <picture class="photo-container">
-          <img src="images/discovery/ba-highschool-min.webp" alt="Image of Broken Arrow High School" loading="lazy" class="photo-container-img"/>
-          <h3>Broken Arrow High School</h3>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/bok-min.webp" alt="Image of BOK Center" class="photo-control-img" loading="lazy"/>
-          <h3>BOK Center</h1>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/Gathering-Place-min.webp" alt="Image of The Gathering Place" class="photo-control-img" loading="lazy"/>
-          <h3>The Gathering Place</h3>
-        </picture>
-        <picture class="photo-container">
-          <img src="images/discovery/oneok-field-min.webp" alt="Image of OneOK Field" loading="lazy" class="photo-container-img"/>
-          <h3>OneOK Field</h3>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/pac-min.webp" alt="Image of Preforming Arts Center" class="photo-control-img" loading="lazy"/>
-          <h3>Preforming Arts Center</h3>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/rhema-lights-min.webp" alt="Image of Rhema Lights" class="photo-control-img" loading="lazy"/>
-          <h3>Rhema Lights</h3>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/rooster-days-min.webp" alt="Image of Rooster Days Parade" loading="lazy" class="photo-control-img"/>
-          <h3>Rooster Days Parade</h3>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/route-66-min.webp" alt="Image of Route 66" loading="lazy" class="photo-control-img"/>
-          <h3>Route 66</h3>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/state-fair-min.webp" alt="Image of Tulsa State Fair" loading="lazy" class="photo-control-img"/>
-          <h3>Tulsa State Fair</h3>
-        </picture>
-        <picture class="photo-control">
-          <img src="images/discovery/tiger-field-min.webp" alt="Image of BA Tiger Stadium" loading="lazy" class="photo-control-img"/>
-          <h3>BA Tiger Stadium</h3>
-        </picture>
-        <picture class="photo-container">
-          <img src="images/discovery/warren-theater-min.webp" alt="Image of BA Warren Theater" loading="lazy" class="photo-container-img"/>
-          <h3>BA Warren Theater</h3>
-        </picture>
+        <div class="photo-control">
+          <img src="images/discovery/ba-highschool-min.webp" alt="Image of Broken Arrow High School" loading="lazy" class="photo-control-img">
+          <p>Broken Arrow High School</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/bok-min.webp" alt="Image of BOK Center" class="photo-control-img" loading="lazy">
+          <p>BOK Center</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/Gathering-Place-min.webp" alt="Image of The Gathering Place" class="photo-control-img" loading="lazy">
+          <p>The Gathering Place</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/oneok-field-min.webp" alt="Image of OneOK Field" loading="lazy" class="photo-control-img">
+          <p>OneOK Field</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/pac-min.webp" alt="Image of Preforming Arts Center" class="photo-control-img" loading="lazy">
+          <p>Preforming Arts Center</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/rhema-lights-min.webp" alt="Image of Rhema Lights" class="photo-control-img" loading="lazy">
+          <p>Rhema Lights</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/rooster-days-min.webp" alt="Image of Rooster Days Parade" loading="lazy" class="photo-control-img">
+          <p>Rooster Days Parade</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/route-66-min.webp" alt="Image of Route 66" loading="lazy" class="photo-control-img">
+          <p>Route 66</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/state-fair-min.webp" alt="Image of Tulsa State Fair" loading="lazy" class="photo-control-img">
+          <p>Tulsa State Fair</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/tiger-field-min.webp" alt="Image of BA Tiger Stadium" loading="lazy" class="photo-control-img">
+          <p>BA Tiger Stadium</p>
+        </div>
+        <div class="photo-control">
+          <img src="images/discovery/warren-theater-min.webp" alt="Image of BA Warren Theater" loading="lazy" class="photo-control-img">
+          <p>BA Warren Theater</p>
+        </div>
     </div>
   </main>
   <div>

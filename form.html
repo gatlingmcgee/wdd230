@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sean Sonderegger - WDD 230 - Web Frontend Development</title>
+
+  <meta name="description" content="Sean Sonderegger home page - WDD 230 - Web Frontend Development - Home page for WDD230 weekly assignments">
+  <meta name="author" content="Sean Sonderegger">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/form.css">  
+  <link rel="icon" href="images/turtle.ico">
+  <meta property="og:title" content="Sean Sonderegger - Design Lessons">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gatlingmcgee.github.io/wdd230/index.html">
+  <meta property="og:image" content="https://bloximages.newyork1.vip.townnews.com/tulsaworld.com/content/tncms/assets/v3/editorial/f/6d/f6d3f6a2-9346-5954-a53b-03eac4b1906d/5b81cb6cf2732.image.jpg?resize=1200%2C800">
+</head>
+<body>
+  <header>
+    <div id="mode">
+      🌙
+    </div>
+    <img class="pic" src="images/ME-min.webp" alt="Sean Sonderegger Profile Pic">
+    <h1 class = "name">Sean Sonderegger</h1>
+    <a id="hamburger-menu" href="#"></a>
+    <nav class = "navigation">
+      <a href="index.html">Home</a>
+      <a href="#">Chamber</a>
+      <a href="http://127.0.0.1:5500/week01/chamber-site-plan.html">Site Plan</a>
+      <a class = "active" href="form.html">Form</a>
+    </nav>
+  </header>
+
+
+    <main>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>User Input</legend>
+                <label>Username:* <input type="text" id="username" name="username" required></label>
+                <label>Password:* <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-zA-Z\s]){8}" title="Password must be at least eight (8) characters long and can only be alpha-numeric"></label>
+                <label>Confirm Password:* <input type="password" id="confirm" name="password" required></label>
+                <div id="pfeedback"></div>
+                <label>Email: <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+
+
+
+
+
+                <label for="range">Page Rating: <input type="range" id="range" name="range" min="0" max="10" value="0" step="1" list="rangevalues"></label>
+                <div id="rangevalue">0</div>
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <div class="ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+                </div>
+            </fieldset>
+
+            <input type="submit" value="Report Page Rating">
+        </form>
+        <!-- <div id="pfeedback"></div> -->
+    </main>
+
+
+    <div>
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Sean Sonderegger <span class="country"> United States
+            <img class="flagpic" src="images/usaflag-min.webp" alt="USA Flag Pic"></span>
+            </p>
+            <p id="lastModified" class="highlight"></p>
+        </footer>
+    </div>
+    
+      <script src="scripts/formvalidation.js"></script>
+    
+    </body>
+    </html>
+
+

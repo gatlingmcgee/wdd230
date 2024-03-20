@@ -1,0 +1,220 @@
+/* VIDEO */
+label {display: block;}
+
+#pfeedback {color: red;}
+
+/* CODEPEN */
+/*
+body {
+	font-family: Roboto, Arial, sans-serif;
+	margin: 1rem;
+}
+
+h1 {
+	font-size: 1.75rem;
+	color: navy;
+	border-bottom: 1px solid #bbb;
+}
+
+hr {
+	margin-bottom: 40px;
+}
+
+label {
+	display: block;
+	font-weight: 700;
+}
+
+input[type=text], input[type=range], input[type=radio] {
+	margin: 1rem;
+	padding: 0.5em;
+}
+
+#alpha:focus, #fruit:focus {
+	background-color: #eee;
+}
+
+#alpha:valid, #fruit:valid {
+	background-color: #bed;
+}
+#alpha:invalid, #alpha:invalid {
+	background-color: #fff0f3;
+	border: 1px solid red;
+}
+#alpha:invalid::before {
+	content: "❌";
+}
+
+
+#r {
+	width: 180px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues {
+	display: flex;
+	margin: 0 0 0 25px;
+	width: 200px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+*/
+
+
+/* stars */
+/*
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: gold;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor
+}
+*/
+/*
+.stars > label:hover {
+	color: #000;
+}
+
+.stars > label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+*/
+
+/* Checkbox *******************************************/
+/*input[type=checkbox] {
+	margin-left: 10px;
+}*/
+/* Note the enlargement from the standard, tiny checkbox */
+/*
+#task {
+	width: 25px;
+	height: 25px;
+}
+
+.vcentered {
+	display: flex;
+	align-items: center;
+}
+
+.inline {
+	display: inline;
+}
+
+.ref {
+	font-size: 13px;
+	margin-top: 1rem;
+}
+*/
+
+
+
+
+
+
+
+
+/* MINE */
+
+/* Root variables */
+:root {
+    --form-background-color: #f9f9f9;
+    --form-border-color: #ccc;
+    --form-padding: 20px;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    padding: var(--form-padding);
+}
+
+form {
+    background-color: var(--form-background-color);
+    border: 1px solid var(--form-border-color);
+    padding: var(--form-padding);
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="range"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="range"] {
+    margin-bottom: 10px;
+}
+
+#range {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

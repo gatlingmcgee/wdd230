@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sean Sonderegger - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="Sean Sonderegger lazyload page - WDD 230 - Web Frontend Development">
+  <meta name="author" content="Sean Sonderegger">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+  <main>
+    <h1>Form Input Pattern Attribute Testing</h1>
+    <p>1️⃣ In the HTML panel, enter a vaild, input pattern.<br> The default pattern is 6 to 10 characters inclusive with at least one number,<br> one special character, one upper case and one lower case.</p>
+      <p><code>pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,10}$"</code></p>
+    <p>2️⃣ In the preview panel, enter a test value in the input field.</p>
+      <p>
+      3️⃣ The input text and border will be green if the input meets the requirements of the pattern.
+    </p>
+    <hr>
+      <form>
+      <label for="test">Enter Test Characters: </label>
+      <input type="text" id="test" name="test" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,10}$" title="6 to 10 characters inclusive with at least on ne number, one special character, one upper case and one lower case letter.">
+    </form>
+  </main>
+
+  <div>
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Sean Sonderegger
+      <p id="lastModified" class="highlight"></p>
+    </footer>
+  </div>
+
+  <div>
+    <button onclick="goBack()">Go Back</button>
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+  </div>
+
+  <script src="scripts/lazyload.js"></script>
+
+</body>
+</html>

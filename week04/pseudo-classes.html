@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sean Sonderegger - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="Sean Sonderegger lazyload page - WDD 230 - Web Frontend Development">
+  <meta name="author" content="Sean Sonderegger">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+  <h2>Pseudo-class Fun</h2>
+<main>
+	<p>Anchor Tag: <a href="https://churchofjesuschrist.org" target="_blank">The Church of Jesus Christ of Latter-day Saints</a></p>
+
+	<div class="datatable">
+		<div class="row">
+			<div class="col">1-1</div>
+			<div class="col">1-2</div>
+		</div>
+		<div class="row">
+			<div class="col">2-1</div>
+			<div class="col">2-2</div>
+		</div>
+		<div class="row">
+			<div class="col">3-1</div>
+			<div class="col">3-2</div>
+		</div>
+	</div>
+	<p>The borders on this "table"'s cells (.col) should not double up on each other.</p>
+</main>
+
+  <div>
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Sean Sonderegger
+      <p id="lastModified" class="highlight"></p>
+    </footer>
+  </div>
+
+  <div>
+    <button onclick="goBack()">Go Back</button>
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
+  </div>
+
+  <script src="scripts/lazyload.js"></script>
+
+</body>
+</html>

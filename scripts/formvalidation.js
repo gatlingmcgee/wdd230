@@ -1,3 +1,4 @@
+/* PASSWORD */
 const password = document.querySelector("#password");
 const confirm = document.querySelector("#confirm");
 const pfeedback = document.querySelector("#pfeedback");
@@ -19,11 +20,10 @@ function controlar() {
         }
     }
 
-
+/* RANGE */
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("range");
 
-// RANGE event listener
 range.addEventListener('change', displayRatingValue);
 range.addEventListener('input', displayRatingValue);
 

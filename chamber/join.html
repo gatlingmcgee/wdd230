@@ -31,7 +31,31 @@
     </nav>
   </header>
   <main>
-    
+    <form method="get" action="record.html" class="wf1">
+      <fieldset>
+          <legend>Application Form</legend>
+          <label>First Name:* <input type="text" id="fname" name="fname" required></label>
+          <label>Last Name:* <input type="text" id="lname" name="lname" required></label>
+          <label>Title or Position:* <input type="text" id="title" name="title" required pattern="[a-zA-Z\s\-].{7,}"></label>
+          <label>Email: <input type="email" id="email" name="email" required placeholder="example_email@email.com"></label>
+          <label>Phone Number:* <input type="tel" id="phone" name="phone" required></label>
+          <label>Business/Organization's Name:* <input type="text" id="business" name="business" required></label>
+          <div class="membership-area">
+            <div>Membership Level</div>
+            
+                <div class="membership-field">
+                  <label><input type="radio" name="membership" value="np">NP Membership</label>
+                  <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                  <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                  <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+                </div>
+          </div>
+          <label>Business/Organization's Description:* <input type="text" id="description" name="description" rows="5" cols="50"></label>
+          <input type="hidden" name="dateandtime">
+
+        </fieldset>
+
+        <input type="submit" value="Send Application">
 
   </main>
 <footer>

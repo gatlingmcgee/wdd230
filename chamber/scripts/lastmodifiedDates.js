@@ -1,3 +1,13 @@
+/* ---------------------------Hamburger----------------------------- */
+
+const button = document.querySelector('#hamburger-menu');
+const navigation = document.querySelector('.navigation');
+
+button.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	button.classList.toggle('open');
+});
+
 const currentYearElement = document.getElementById('currentYear');
 currentYearElement.textContent = new Date().getFullYear();
 
@@ -34,16 +44,6 @@ if (lastVisitDate) {
 
 localStorage.setItem("lastVisitDate", new Date().toISOString());
 
-/* ---------------------------Hamburger----------------------------- */
-
-const button = document.querySelector('#hamburger-menu');
-const navigation = document.querySelector('.navigation');
-
-button.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	button.classList.toggle('open');
-});
-
 /* ---------------------------Go Back----------------------------- */
 
 function goBack() {
@@ -61,4 +61,3 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set the value of the input field to the formatted date and time
     document.getElementById('submissionTime').value = formattedDate;
 });
-

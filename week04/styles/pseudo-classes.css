@@ -1,5 +1,5 @@
 :root {
-	--bord: 1px solid #777;
+	--border: 1px solid #777;
 }
 
 * {
@@ -35,23 +35,25 @@ main {
 }
 
 .col {
-	border-top: var(--bord);
-	border-left: var(--bord);
 	padding: 10px;
+	border-top: var(--border);
+	border-left: var(--border);
 }
 
 .col:nth-child(even) {
-	border-right: var(--bord);
+	border-right: var(--border);
 }
 
+/* .col:first-child {
+	background-color: green;
+} */
+
 .row:last-child {
-	border-bottom: var(--bord);
+	border-bottom: var(--border);
 	background-color: #bbb;
 }
 
-a:active,
-a:link,
-a:visited {
+a:active, a:visited {
 	color: navy;
 }
 

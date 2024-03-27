@@ -225,8 +225,9 @@ footer {
 
 textarea {
   display: block;
-  padding: 80px;
+  padding: 10px;
   border-radius: 10px;
+  width: 48%;
 }
 
 .user-info input[type="radio"] {
@@ -269,17 +270,12 @@ textarea {
   color: #fff;
   border-radius: 10px;
   padding: 1.2rem;
-  width: 45%;
+  width: 43%;
   max-width: 40rem;
   margin: -1rem 2% 2rem 7%;
   margin-top: 3rem;
   font-weight: bold;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.user-info input[type="submit"]:hover {
-  opacity: 1.2;
+  font-size: 1.8rem;
 }
 
 .thankyou-message {

@@ -97,7 +97,10 @@
   }
 
   .user-info input[type="submit"] {
-    width: 100%;
-    padding: 5px;
+    width: 90%;
+  }
+
+  textarea {
+    width: 90%;
   }
 }

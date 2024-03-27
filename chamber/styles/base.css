@@ -1,5 +1,5 @@
 :root {
-  --form-background-color:: #fff;
+  --form-background-color: #fff;
   --font-family: Arial, sans-serif;
   --form-border-color: #ccc;
   --form-padding: 20px;
@@ -74,7 +74,7 @@ footer {
 }
 
 #hamburger-menu {
-  display: none; /* hide hamburger button */
+  display: none; 
 }
 
 .cta-button {
@@ -182,157 +182,116 @@ footer {
 }
 
 
-
 /* ---------------------------Form----------------------------- */
 
 
-:root {
-    --form-background-color: #f9f9f9;
-    --form-border-color: #ccc;
-    --form-padding: 20px;
+.user-info {
+  text-align: initial;
+  margin: 5% auto;
 }
 
-form {
-    background-color: var(--form-background-color);
-    border: 1px solid var(--form-border-color);
-    padding: var(--form-padding);
-    max-width: 800px;
-    margin: auto;
+.user-info fieldset {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 5rem;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.wfi fieldset {
-    margin: 2rem 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: .5rem 2%;
-}
-
-.wf1 legend {
-    color: #09194e;
-    padding: 0 1.5rem;
-    font-weight: bold;
-    font-size: large;
-}
-
-.wf1 label {
-    width: 100%;
-    display: block;
-    padding-top: 1rem;
-    color: #9c2c13;
-    font-size: 1.2rem;
-}
-
-.wf1 div {
-    padding-top: 5px;
-    color: #09194e;
-    font-size: 1.2rem;
-}
-
-.wf1 input[type="text"],
-.wf1 input[type="tel"],
-.wf1 input[type="email"],
-.wf1 input[type="url"],
-.wf1 input[type="date"] {
-    background-color: #eee;
-    display: block;
-    border: solid 1px #999;
-    padding: .75rem;
-    color: #555;
-    width: 100%;
-    max-width: 400px;
-    appearance: none;
-}
-
-.wf1 input:required {
-    border-left: solid 8px red;
-}
-
-.wf1 input:required:valid {
-    border-left: solid 8px green;
-
-    position: relative;
-}
-
-.wf1 input:required:valid::after {
-    content: "Valid";
-    position: absolute;
-    left: -9999px;
-}
-
-.wf1 input[type="submit"] {
-    border: none;
-    background-image: linear-gradient(#9c2c13, #6f200e);
-    color: #fff;
-    border-radius: 20px;
-    padding: 1rem;
-    width: 50%;
-    max-width: 600px;
-    margin: 1.5rem .1% 2rem 1.5%;
-    box-shadow: 2px 2px 4px #999;
-}
-
-div {
-    font-weight: bold;
-}
-
-.membership-field .cost {
-  font-size: 1.5rem;
+.user-info legend {
+  padding: 0 .8rem;
   font-weight: bold;
-  list-style: none
+  font-size: 2rem;
 }
 
-.wf1 input[type="radio"],
-.wf1 input[type="checkbox"] {
-    margin-right: 6px;
+.user-info label,
+.container {
+  display: block;
+  padding-top: 2rem;
+  font-size: 1.5rem;
 }
 
-.membership-boxes {
+.user-info input[type="text"],
+.user-info input[type="tel"],
+.user-info input[type="email"] {
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 10px;
+  padding: .75rem;
+  color: #555;
   width: 100%;
+  max-width: 400px;
+  appearance: none;
+}
+
+textarea {
+  display: block;
+  padding: 80px;
+  border-radius: 10px;
+}
+
+.user-info input[type="radio"] {
+  margin-right: 1.5rem;
+}
+
+.box {
   display: grid;
+  grid-template-columns: 50%;
   gap: 2rem;
   font-weight: bold;
 }
 
+.box {
+  padding-top: 2rem;
+}
 
-.membership-field {
+.content {
   border: solid 1px #999;
   border-radius: 10px;
   padding: 0 3rem;
   background-color: #eee;
 }
 
-.membership-field li {
-  font-size: 1.1rem;
+.content li {
+  font-size: 1.2rem;
   margin-top: 1rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 
-.membership-field .cost {
-  font-size: 1.3rem;
-  font-weight: bold;
+.content .cost {
+  font-size: 1.1rem;
+  font-weight: normal;
   list-style: none
 }
 
-.level {
-  padding: 5px;
-  text-align: left;
+.user-info input[type="submit"] {
+  border: none;
+  background-image: linear-gradient(#3e5b7e, #9c2c13, #3e5b7e);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  width: 45%;
+  max-width: 40rem;
+  margin: -1rem 2% 2rem 7%;
+  margin-top: 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
+
+.user-info input[type="submit"]:hover {
+  opacity: 1.2;
+}
+
+.thankyou-message {
+  padding: 3rem;
+}
+
+.user-info input:required {
+  border-left: solid 3px red;
+}
+
+.user-info input:required:valid {
+  border-left: solid 3px green;
+}
+
 

@@ -1,0 +1,23 @@
+{
+    "ward": "Forest Ridge",
+    "moved": 2016,
+    "family members": 3,
+    "visited by bishopric": true,
+    "members": [
+        {
+            "name": "Sean",
+            "gender": 40,
+            "birthday": 1982
+        },
+        {
+            "name": "Stacy",
+            "gender": 45,
+            "birthday": 1977
+        },
+        {
+            "name": "Becca",
+            "gender": 18,
+            "birthday": 2005
+        }
+    ]
+}

@@ -8,14 +8,15 @@ const ulElement = document.querySelector('#links-list');
 async function getLinks() {
 	const response = await fetch(linksURL);
 	const data = await response.json();
+    const weeks = data.weeks;
 	console.log(data);
-	console.log('hello')
-	//displayLinks(data);
+	console.log("hello")
+	displayLinks(weeks);
   }
 
 
   const displayLinks = (weeks) => {
-    weeks.lessons.forEach((week) => {
+    weeks.forEach((week) => {
         let liElement = document.createElement('li');
 
         liElement.textContent = `${week.week}: `;
@@ -32,7 +33,6 @@ async function getLinks() {
         if (liElement.lastChild.nodeValue === ' | ') {
             liElement.removeChild(liElement.lastChild);
         }
-
 
         ulElement.appendChild(liElement);
     });

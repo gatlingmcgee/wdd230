@@ -18,7 +18,7 @@
     "week": "Week 2",
     "links": [
         {
-            "url":"week02/bom.html",
+            "url":"week02/subfolder/bom.html",
             "title":"BOM List"
         },
         {
@@ -45,7 +45,7 @@
             "title":"Responsive Images"
         },
         {
-            "url":"week03/bom.html",
+            "url":"week03/subfolder/bom.html",
             "title":"BOM Array"
         }
             

@@ -3,7 +3,7 @@ const password = document.querySelector("#password");
 const confirm = document.querySelector("#confirm");
 const pfeedback = document.querySelector("#pfeedback");
 
-confirm.addEventListener('focusout', controlar)
+confirm.addEventListener('focusout', controlar);
 
 function controlar() {
     //console.log('inside the function')
@@ -12,11 +12,11 @@ function controlar() {
         password.value = ""
         confirm.value = ""
         password.focus()
-        pfeedback.textContent = "Values do not match. Please try again."
+        pfeedback.textContent = "Values do not match. Please try again.";
 
     } else {
             //console.log('it is a match')
-            pfeedback.textContent = ""
+            pfeedback.textContent = "";
         }
     }
 

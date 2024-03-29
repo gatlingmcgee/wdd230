@@ -202,3 +202,34 @@ footer {
   padding: 60px;
   animation: fade 2s;
 }
+
+.Placeholders {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*  weather  */
+
+.weather {
+  border: 1px solid #424C42;
+  background-color: #f6f0da;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.weather #temperature {
+  font-size: 1.2rem;
+  color: #1d393f;
+  margin: 10px;
+}
+
+.weather #description {
+  text-transform: capitalize;
+  color: #1f2b1f;
+  margin: 0 auto;
+}
+
+.weather h3 {
+  color: #1f2b1f;
+  margin: 10px;
+}

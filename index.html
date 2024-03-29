@@ -48,22 +48,34 @@
     <div class="grid">
       <section id="testing" class="card">
         <h2 class = "heading2">Learning Activities</h2>
-        <ul>
+        <ul id="links-list"></ul>
+
+        <!--<ul>
           <li>Week01: <a href="http://127.0.0.1:5500/week01/holygrail.html">Holy Grail</a> | <a href="http://127.0.0.1:5500/week01/media-query.html">Media Query</a></li>
           <li>Week02: <a href="http://127.0.0.1:5500/week02/subfolder/bom.html">BOM List</a> | <a href="http://127.0.0.1:5500/week02/design.html">Design Principles</a></li>
           <li>Week03: <a href="http://127.0.0.1:5500/week03/images/landscape.webp">Landscape Image</a> | <a href="http://127.0.0.1:5500/week03/lazyload.html">Lazyload</a> | <a href="http://127.0.0.1:5500/week03/responsive-images.html">Responsive Images</a> | <a href="http://127.0.0.1:5500/week03/subfolder/bom.html">BOM Array</a></li>
           <li>Week04: <a href="http://127.0.0.1:5500/week04/pseudo-classes.html">Pseudo-Classes</a> | <a href="http://127.0.0.1:5500/week04/images/combinators.png">Combinators</a> | <a href="http://127.0.0.1:5500/week04/tablebuild.html">HTML Tables</a> | <a href="http://127.0.0.1:5500/week04/input-pattern-testing.html">Input Pattern Testing</a> | <a href="http://127.0.0.1:5500/week04/form-start/Form-start/index.html">Form</a></li>
-          <li>Week05: <a href="https://codepen.io/gatlingmcgee/pen/bGJrjPm">Pseudo-Elements</a> <a href="http://127.0.0.1:5500/week05/new-ward-members.json">New Members</a> <a href="http://127.0.0.1:5500/week05/prophets.html">Prophets</a></li>
-          <li>Week06: <a href="#">Learning Activity 6: </a></li>
-        </ul>
+          <li>Week05: <a href="https://codepen.io/gatlingmcgee/pen/bGJrjPm">Pseudo-Elements</a> <a href="http://127.0.0.1:5500/week05/new-ward-members.json">New Members</a> <a href="http://127.0.0.1:5500/week05/prophets.html">Prophets</a> <a href="http://127.0.0.1:5500/week05/weather.html">Weather API</a></li>
+          <li>Week06: <a href="#">Learning Activity 6: </a></li> 
+        </ul>-->
+        
       </section>
       <section id="testing2" class="card">
         <h2 class = "heading2">Information</h2>
           <dl class="Placeholders">
             <dt></dt>
             <dd id="state-placeholder"></dd>
-            <dt>Weather:</dt>
-            <dd id="weather-placeholder"></dd>
+            <!-- <dt>Weather Broken Arrow, OK:</dt>
+            <dd id="weather-placeholder"></dd> -->
+              <section class="weather">
+                <h3 id="town"></h3>
+                <p id="description"></p>
+                <img id="graphic" src="" alt="">
+                <p id="temperature"></p>
+              </section>
+
+
+
             <dt>Number of Page Visits:</dt>
             <!-- <dd id="visits-placeholder"></dd> -->
             <dd>
@@ -83,7 +95,13 @@
     </footer>
   </div>
 
-  <script src="scripts/getDates.js"></script>
+  <!--<script src="scripts/getDates.js"></script> -->
+  <script src="scripts/links.js"></script>
+  <script src="scripts/indexWeather.js"></script>
+  <script src="scripts/pageVisits.js"></script>
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/darkMode.js"></script>
+  
 
 </body>
 </html>

@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <link rel="stylesheet" href="styles/form.css">  
   <link rel="icon" href="images/turtle.ico">
   <meta property="og:title" content="Sean Sonderegger - Design Lessons">
   <meta property="og:type" content="website">
@@ -22,25 +21,36 @@
 </head>
 <body>
 
-	<header>
-        <h1>Comfirmation</h1>
-        <h2>Submition Comfirmation</h2>
-    </header>
-    
-    <main>
-        <h1>Your submition is complete</h1>
-        <p>Thank you for your submition. We value your input to help us make our page even better.</p>
-    </main>
+  <main>
 
-    <footer>
-        &copy; 2018 &bull; Sean Sonderegger &bull; 123-555-6789
-    </footer>
+      <section id="testing2" class="card">
+        <h2 class = "heading2">Information</h2>
+          <h8 id="town"></h8>
+            <!-- <dt>Weather Broken Arrow, OK:</dt> -->
+            <img id="graphic" src="" alt="">
+            <p id="description"></p>
+            <p id="temperature"></p>
 
-    <div>
-        <button onclick="goBack()">Go Back</button>
+            <!-- <dt>Number of Page Visits:</dt>
+            <dd id="visits-placeholder"></dd>
+            <dd> -->
+              <p><span class="visits"></span></p>
+            </dd>
+          </h8>
+      </section>
     </div>
+  </main>
+  <div>
+    
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Sean Sonderegger <span class="country"> United States
+        <img class="flagpic" src="images/usaflag-min.webp" alt="USA Flag Pic"></span>
+      </p>
+      <p id="lastModified" class="highlight"></p>
+    </footer>
+  </div>
 
-<script src="js/backButton.js"></script>
+  <script src="scripts/indexWeather - copy.js"></script>
 
 </body>
 </html>

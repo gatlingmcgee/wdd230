@@ -17,8 +17,11 @@ async function getMembers() {
 const displayMembers = (members) => {
     members.forEach((member) => {
         let liElement = document.createElement('li');
+        let images = document.createElement('img');
 
+        images.src = member.logopath;
         liElement.textContent = `${member.name}: `;
+        
 
         let aElement = document.createElement('a');
         aElement.href = member.url;
@@ -26,7 +29,10 @@ const displayMembers = (members) => {
         aElement.target = '_blank';
         liElement.appendChild(aElement);
 
+        section.appendChild(img);
         ulElement.appendChild(liElement);
+
+        display.appendChild(section);
     });
 }
   

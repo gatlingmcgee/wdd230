@@ -3,7 +3,7 @@
 const baseURL = "https://gatlingmcgee.github.io/wdd230/";
 const membersURL = "https://gatlingmcgee.github.io/wdd230/chamber/data/members.json";
 
-const ulElement = document.querySelector('#members-list');
+const display = document.querySelector('#members-list');
 
 async function getMembers() {
     const response = await fetch(membersURL);
@@ -16,21 +16,29 @@ async function getMembers() {
 
 const displayMembers = (members) => {
     members.forEach((member) => {
-        let liElement = document.createElement('li');
+        let section = document.createElement('section');
+        let url = document.createElement('p');
         let images = document.createElement('img');
-
-        images.src = member.logopath;
-        liElement.textContent = `${member.name}: `;
+        let aElement = document.createElement('a');
+        let name = document.createElement('h4');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
         
 
-        let aElement = document.createElement('a');
         aElement.href = member.url;
-        aElement.textContent = member.name;
+        images.src = member.logopath;
+        aElement.textContent = member.url;
+        phone.textContent = member.phone;
+        address.textContent = member.address;
+        name.textContent = member.name;
         aElement.target = '_blank';
-        liElement.appendChild(aElement);
 
-        section.appendChild(img);
-        ulElement.appendChild(liElement);
+        section.appendChild(name)
+        section.appendChild(images);
+        section.appendChild(address);
+        section.appendChild(phone);
+        url.appendChild(aElement);
+        section.appendChild(url);
 
         display.appendChild(section);
     });

@@ -291,3 +291,36 @@ textarea {
 }
 
 
+/* ---------------------------Directory----------------------------- */
+
+#members-list section {
+  margin: 0.25rem;
+  padding: 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#members-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+#members-list img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+  width: 250px;
+  height: auto;
+}
+
+#members-list p {
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#members-list h4 {
+  display: none;
+  font-size: 30px;
+}

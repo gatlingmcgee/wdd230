@@ -293,7 +293,7 @@ textarea {
 
 /* ---------------------------Directory----------------------------- */
 
-#members-list section {
+.grid section {
   margin: 0.25rem;
   padding: 0.35rem;
   background-color: #eee;
@@ -303,29 +303,71 @@ textarea {
   align-items: center;
 }
 
-#members-list {
+.grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
 }
 
-#members-list img {
+.grid img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
   width: 250px;
   height: auto;
 }
 
-#members-list p {
+.grid p {
 	font-weight: 600;
 	font-size: 18px;
   text-align: center;
 }
 
-#members-list h4 {
+.grid h4 {
   display: none;
   font-size: 30px;
 }
 
-#members-list section a {
+.grid section a {
   word-wrap: break-word;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #fff;
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 2fr;
+	margin: 2px auto;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none;
+}
+
+.list section h4 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #767676;
 }

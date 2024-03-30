@@ -318,9 +318,14 @@ textarea {
 #members-list p {
 	font-weight: 600;
 	font-size: 18px;
+  text-align: center;
 }
 
 #members-list h4 {
   display: none;
   font-size: 30px;
+}
+
+#members-list section a {
+  word-wrap: break-word;
 }

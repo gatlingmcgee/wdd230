@@ -124,4 +124,9 @@
     display: block;
   }
 
+  #members-list p {
+    margin: 5px;
+    text-align: center;
+  }
+
 }

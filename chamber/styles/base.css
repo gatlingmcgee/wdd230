@@ -371,3 +371,18 @@ textarea {
 .list section:nth-child(even) {
 	background-color: #767676;
 }
+
+/* ---------------------------Weather----------------------------- */
+
+.forecastIcon {
+  max-width: 40%;
+}
+
+#forecastContainer {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+

@@ -374,15 +374,24 @@ textarea {
 
 /* ---------------------------Weather----------------------------- */
 
-.forecastIcon {
-  max-width: 40%;
+.icon {
+  max-width: 60%;
 }
 
-#forecastContainer {
+#forecast {
   display: flex;
   flex-direction: row;
-  font-size: 1.2rem;
+  font-size: 1rem;
   justify-content: space-around;
   align-items: center;
 }
 
+.day,
+.temperature {
+    margin: 10;
+}
+
+.day,
+.current-temp {
+  color: #112c52;
+}

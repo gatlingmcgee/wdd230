@@ -1,5 +1,9 @@
-const forecastUrl = '//api.openweathermap.org/data/2.5/forecast?lat=36.06&lon=-95.80&appid=25baae6a81058afccd7517c966ed3aed&units=imperial';
 
+//35.9434255252221, -95.88567013298344 CT
+//=49.75&lon=6.64 BA
+//=36.06&lon=-95.80 AL
+//=-33.92&lon=18.42 GE
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=36.06&lon=-95.80&appid=25baae6a81058afccd7517c966ed3aed&units=imperial';
 
 async function forecastApiFetch() {
     try {
@@ -47,30 +51,49 @@ function displayForecastResults(data) {
             }
 
             const figureElement = document.getElementById(dayId);
-            const tempForecast = figureElement.querySelector('.tempForecast');
-            const forecastIcon = figureElement.querySelector('.forecastIcon');
+            const temperature = figureElement.querySelector('.temperature');
+            const icon = figureElement.querySelector('.icon');
             const forecastCaptionDesc = figureElement.querySelector('.forecastCaptionDesc');
             const dayName = figureElement.querySelector('.day');
+            const currentTemp = document.querySelector('#current-temp');
+            const currentDesc = document.querySelector('#current-desc');
 
-            tempForecast.innerHTML = `${Math.round(item.main.temp)}&deg;F`;
+            //currentDesc.innerHTML = `${item.weather[0].description}`;
+            currentDesc.innerHTML = capitalizeFirstLetter(item.weather[0].description);
+
+            currentTemp.innerHTML = `${item.main.temp}&deg;F`;
+            temperature.innerHTML = `${Math.round(item.main.temp)}&deg;F`;
             const iconsrc = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
             const desc = item.weather[0].description;
-            forecastIcon.setAttribute('src', iconsrc);
-            forecastIcon.setAttribute('alt', desc);
+            icon.setAttribute('src', iconsrc);
+            icon.setAttribute('alt', desc);
             forecastCaptionDesc.textContent = ` ${capitalizeCaption(desc)}`;
 
             const options = { month: 'short', day: 'numeric' };
             dayName.innerHTML = forecastDate.toLocaleString('en-EN', options);
+
+            function capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }         
+
+
+
+
+            
         });
     }
 }
 
 function capitalizeCaption(phrase) {
-    let words = phrase.split(' '); //we separate the phrase in words by the space " "
+    let words = phrase.split(' '); 
     for (let i = 0; i < words.length; i++) {
         words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
-    } // we iterate through every element (words) and capitalized the 0 character.
-    let capitalizedPhrase = words.join(" "); // then we put them all together
-
+    } 
+    let capitalizedPhrase = words.join(" ");
     return capitalizedPhrase
+
+
+    
 };
+
+

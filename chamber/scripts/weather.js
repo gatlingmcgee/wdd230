@@ -53,7 +53,7 @@ function displayForecastResults(data) {
             const figureElement = document.getElementById(dayId);
             const temperature = figureElement.querySelector('.temperature');
             const icon = figureElement.querySelector('.icon');
-            const forecastCaptionDesc = figureElement.querySelector('.forecastCaptionDesc');
+            const description = figureElement.querySelector('.description');
             const dayName = figureElement.querySelector('.day');
             const currentTemp = document.querySelector('#current-temp');
             const currentDesc = document.querySelector('#current-desc');
@@ -62,12 +62,12 @@ function displayForecastResults(data) {
             currentDesc.innerHTML = capitalizeFirstLetter(item.weather[0].description);
 
             currentTemp.innerHTML = `${item.main.temp}&deg;F`;
-            temperature.innerHTML = `${Math.round(item.main.temp)}&deg;F`;
+            temperature.innerHTML = `${item.main.temp}&deg;F`;
             const iconsrc = `https://openweathermap.org/img/w/${item.weather[0].icon}.png`;
             const desc = item.weather[0].description;
             icon.setAttribute('src', iconsrc);
             icon.setAttribute('alt', desc);
-            forecastCaptionDesc.textContent = ` ${capitalizeCaption(desc)}`;
+            description.textContent = ` ${capitalizeCaption(desc)}`;
 
             const options = { month: 'short', day: 'numeric' };
             dayName.innerHTML = forecastDate.toLocaleString('en-EN', options);

@@ -3,7 +3,6 @@
   main {
     max-width: 960vw;
     margin: 0 auto;
-    
   }
 
   h1 {
@@ -56,10 +55,9 @@
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
     gap: 20px;
     display: block;
+    width: 410px;
   }
 
   .grid section {
@@ -74,7 +72,13 @@
     padding: 50px;
   }
 
-  .spotlightgrid section {
+  .spotlightgrid {
+    text-align: center;
+    width: 350px;
+    height: auto;
+  }
+
+  .spotlightgrid-card {
     border: 1px solid black;
     margin-bottom: 30px;
   }
@@ -138,5 +142,41 @@
     height: auto;
   }
 
-}
+  /* ****************index******************/
+  h1 {
+    text-align: center;
+  }
 
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .grid {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .spotlightgrid {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .spotlight-card {
+    margin-bottom: 20px;
+  }
+}
+  /* ****************banner******************/
+
+  @media (max-width: 440px) {
+
+  .meet {
+    position: relative;
+    top: 0;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+}

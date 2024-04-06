@@ -1,3 +1,5 @@
+/* ---------------------------Spotlights----------------------------- */
+
 const membersURL = "https://gatlingmcgee.github.io/wdd230/chamber/data/members.json";
 
 async function getMembers() {

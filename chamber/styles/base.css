@@ -430,3 +430,31 @@ figure {
   font-weight: bold;
   text-align: center;
 }
+
+/* ---------------------------Banner----------------------------- */
+
+.meet {
+  background-color: #c48282;
+  padding: 50px;
+  text-align: center;
+  position: fixed;
+  top:230px;
+  left: 0;
+  width: 100%;
+  display: none;
+  font-weight: bold;
+  font-size: larger;
+  z-index: 1;
+}
+
+#close-banner {
+  background-color: #112c52;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: white;
+}
+
+#close-banner::before {
+  content: "❌";
+}

@@ -9,7 +9,7 @@ async function getMembers() {
     const response = await fetch(membersURL);
     const data = await response.json();
     const members = data.members;
-    console.log(data);
+    //console.log(data);
     displayMembers(members);
 }
 
@@ -34,7 +34,7 @@ const displayMembers = (members) => {
         aElement.target = '_blank';
 
         section.appendChild(name)
-        section.appendChild(images);
+        section.appendChild(images).alt = `directoryimages`;
         section.appendChild(address);
         section.appendChild(phone);
         url.appendChild(aElement);

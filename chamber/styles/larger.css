@@ -116,6 +116,10 @@
     display: block;
   }
 
+  .photo-control img:hover {
+    transform: none;
+  }
+
   .list section {
     display: grid;
 	  grid-template-columns: 1fr;

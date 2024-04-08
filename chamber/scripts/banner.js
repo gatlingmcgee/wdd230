@@ -15,8 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-/*
-  document.addEventListener("DOMContentLoaded", function() {
+  /* document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("banner").style.display = "block";
   
     document.getElementById("close-banner").addEventListener("click", function() {
